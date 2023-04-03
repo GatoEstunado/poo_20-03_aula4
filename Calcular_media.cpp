@@ -3,9 +3,9 @@
 using namespace std;
 
 int main () {
-    // Introduzir as vari�veis
+    // Introduzir as variáveis
     double nota1, nota2, nota3, nota4;
-    // Interface do usu�rio e leitura do sistema
+    // Interface do usuário e leitura do sistema
     cout << "Digite a sua primeira nota do bimestre >>> ";
     cin >> nota1;
     cout << "Digite a sua segunda nota do bimestre >>> ";
@@ -19,13 +19,13 @@ int main () {
     double soma = (nota1 + nota2 + nota3 + nota4);
     soma = (soma / 4);
     
-    // Interface de conclus�o do usu�rio
-    cout << "A sua média no semestre foi: " << soma << endl;
+    // Interface de conclusão do usuário
+    cout << "A sua media no semestre foi: " << soma << endl;
     if (soma >= 7) {
-        cout << "Parabéns! Você foi aprovado!" << endl;
+        cout << "Parabens! Voce foi aprovado!" << endl;
     }
     else {
-        cout << "Eita! Você foi reprovado!" << endl;
+        cout << "Eita! Voce foi reprovado!" << endl;
     }
     return 0;
 }
