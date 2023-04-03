@@ -2,25 +2,25 @@
 using namespace std;
 
 int main() {
-	// IntroduÁ„o as vari·veis
+	// Introdu√ß√£o as vari√°veis
     int a = 15;
     int b = 3;
     int c = 10;
     
     // Exemplo de uso do operador AND (&&)
     if (a < b && b < c) {
-    	// Se A È maior que B, e, B maior que C, ent„o:
-        cout << "A ordem √©: a, b, c" << endl;
+    	// Se A √© maior que B, e, B maior que C, ent√£o:
+        cout << "A ordem e: a, b, c" << endl;
     }
     // Exemplo de uso do operador OR (||)
     if (a > b || b > c) {
-    	// Se A È menor que B, ou, B menor que C, ent„o:
-        cout << "Pelo menos uma das condi√ß√µes √© verdadeira" << endl;
+    	// Se A √© menor que B, ou, B menor que C, ent√£o:
+        cout << "Pelo menos uma das condicoes sao verdadeira" << endl;
     }
     // Exemplo de uso do operador NOT (!!)
     if (!(a == b)) {
-    	// Se A n„o È igual a B, ent„o:
-        cout << "a √© diferente de b" << endl;
+    	// Se A n√£o √© igual a B, ent√£o:
+        cout << "a e diferente de b" << endl;
     }
     return 0;
 }
