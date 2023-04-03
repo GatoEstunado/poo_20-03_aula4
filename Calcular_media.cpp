@@ -5,6 +5,11 @@ using namespace std;
 int main () {
     // Introduzir as variáveis
     double nota1, nota2, nota3, nota4;
+    char continuar = 's';
+    
+    // Iniciar o 'while' para que possa repetir
+    while (continuar == 's' || continuar == 'S') {
+        
     // Interface do usuário e leitura do sistema
     cout << "Digite a sua primeira nota do bimestre >>> ";
     cin >> nota1;
@@ -20,12 +25,28 @@ int main () {
     soma = (soma / 4);
     
     // Interface de conclusão do usuário
-    cout << "A sua media no semestre foi: " << soma << endl;
-    if (soma >= 7) {
-        cout << "Parabens! Voce foi aprovado!" << endl;
+    // 'Switch' para organizar e possibilitar outras opções
+    switch ((int)soma) {
+        // Se for igual ou maior que 7
+        case 10:
+        case 7:
+             cout << "Parabens! Voce foi aprovado!" << endl;
+             break;
+        
+        // Se for igual ou maior que 5 e menor que 7
+        case 6:
+        case 5:
+             cout << "Voce devera fazer uma prova substitutiva." << endl;
+             break;
+        
+        // Se for menor que 5
+        default:
+             cout << "Infelizmente voce foi reprovado..." << endl;
+             break;
     }
-    else {
-        cout << "Eita! Voce foi reprovado!" << endl;
+    // Finalização do 'while' para que o programa se repita
+    cout << "Deseja realizar outra media? (s/n)" << endl;
+    cin >> continuar;
     }
     return 0;
 }
