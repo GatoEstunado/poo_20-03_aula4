@@ -29,6 +29,8 @@ int main () {
     switch ((int)soma) {
         // Se for igual ou maior que 7
         case 10:
+        case 9:
+        case 8:
         case 7:
              cout << "Parabens! Voce foi aprovado!" << endl;
              break;
